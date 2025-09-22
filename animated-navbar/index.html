@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated-Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header
+        class="relative w-full h-screen bg-no-repeat bg-cover overflow-hidden
+    bg-[url(https://images.unsplash.com/photo-1603437873662-dc1f44901825?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+        <nav class="fixed top-0 w-full h-[90px] flex justify-between items-center px-10 bg-transparent backdrop-blur-0">
+            <h1 class="text-3xl text-white font-medium">HUSSAIN</h1>
+            <div id="menuBtn" class="p-2 flex flex-col gap-1 cursor-pointer items-end">
+                <span class="block w-[22px] h-[3px] bg-white"></span>
+                <span class="block w-[15px] h-[3px] bg-white"></span>
+                <span class="block w-[22px] h-[3px] bg-white"></span>
+            </div>
+        </nav>
+        <aside id="sideMenu"
+            class="absolute w-[36%] h-full top-0 right-[-40%] bg-white backdrop-blur-lg bg-white/30 px-14 pt-8">
+            <div class="w-full flex justify-end">
+                <div id="closeMenu"
+                    class="bg-white opacity-[0.9] size-8 cursor-pointer rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div id="menu" class="w-full h-full flex flex-col gap-6 pt-16">
+                <p class="text-[3rem]">Work</p>
+                <p class="text-[3rem]">About</p>
+                <p class="text-[3rem]">Courses</p>
+                <p class="text-[3rem]">Services</p>
+                <p class="text-[3rem]">Contact Us</p>
+            </div>
+        </aside>
+    </header>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <section class="w-full h-screen bg-yellow-600"></section>
+    <script src="script.js"></script>
+</body>
+
+</html>
